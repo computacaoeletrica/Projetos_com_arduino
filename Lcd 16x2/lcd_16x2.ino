@@ -1,8 +1,11 @@
+/* O projeto irá fazer a leitura de um potenciometro e um botao, ao pressionar o botao aparece uma mensagem no LCD de botao pressionado e ao rodar o potenciometro,
+exibirá a leitura analógica na tela */
+
 #include <LiquidCrystal.h> //Inserção da biblioteca pra trabalhar com LCD
 
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2); // Pinos de interface
 
-int leitura = 0 , pressionado = 0 ; // Declaracao das variaveis pra monitorar o botao e a leitura analogica
+int leitura = 0 , pressionado = 0 ; // Declaracao das variaveis pra monitorar o botao e a leitura analógica
 
 void setup() {
   Serial.begin(9600); // Inicia a Serial
