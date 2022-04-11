@@ -1,3 +1,5 @@
+// O projeto simplesmente faz a leitura de um potenciometro e escreve o resultado na Serial
+
 int leitura = 0 ;
 
 void setup()
