@@ -54,14 +54,7 @@ void loop()
  
   delay(1000);
   
-  // Desenhar o 3
-  
-  digitalWrite(8, HIGH);
-  digitalWrite(6, LOW);
- 
-  delay(1000);
-  
-  // DesEnhar o 4
+  // Desenhar o 4
   
   digitalWrite(7, LOW);
   digitalWrite(2, LOW);
