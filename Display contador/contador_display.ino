@@ -2,6 +2,7 @@
 
 void setup()
 {
+  Serial.begin(9600);
   pinMode(2, OUTPUT); // A
   pinMode(3, OUTPUT); // B
   pinMode(4, OUTPUT); // F
@@ -20,6 +21,7 @@ void loop()
   digitalWrite(4, HIGH);
   digitalWrite(6, HIGH);
   digitalWrite(7, HIGH);
+  digitalWrite(5, LOW);
   
   delay(1000);
   
@@ -54,14 +56,7 @@ void loop()
  
   delay(1000);
   
-  // Desenhar o 3
-  
-  digitalWrite(8, HIGH);
-  digitalWrite(6, LOW);
- 
-  delay(1000);
-  
-  // DesEnhar o 4
+  // Desenhar o 4
   
   digitalWrite(7, LOW);
   digitalWrite(2, LOW);
@@ -76,9 +71,5 @@ void loop()
   digitalWrite(7, HIGH);
  
   delay(3000);
-  
-  
-  
-  
-  
+ 
 }
