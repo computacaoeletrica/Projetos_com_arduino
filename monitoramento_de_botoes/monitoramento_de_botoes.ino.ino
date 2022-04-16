@@ -1,15 +1,15 @@
-// Projeto que conta de 0 até 5 em um display de 7 segmentos
+// Projeto que mostra em um display de 7 segmentos o número de botoes que forsm pressionados
 
-int cont = 0 , i ;
+int cont = 0 , i ; // Declara uma variável contadora e uma incrementadora 
 
-int pressionados[4] ;
+int pressionados[4] ; // Cria um vetor que guarda os estados dos botoes (ligado/desligado)
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(9600); //Inicia a Serial
   
   for (i=0;i<4;i++){
-    pressionados[i]=0;
+    pressionados[i]=0; // Adere nível deskigad
   }
   
   pinMode(2, OUTPUT); // A
